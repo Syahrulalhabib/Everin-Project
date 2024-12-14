@@ -1,0 +1,16 @@
+runtime: nodejs18
+
+env_variables:
+  FIREBASE_CREDENTIALS_PATH: "./everin-project-firebase-adminsdk-45md0-104bd13ca5.json"
+  JWT_SECRET: "00fc3cc87a2bf11abb65a2223a6714c043fbbcce0ddea4080e32a45f26737847"
+  GOOGLE_CLOUD_PROJECT: "everin-project"
+
+instance_class: F2  # Choose an instance class based on your app's needs (F2 for a small instance)
+
+handlers:
+  - url: /static
+    static_dir: static  # If you have static files, make sure to configure the appropriate static handler.
+  
+  - url: /.*  # Catch-all handler for your API routes
+    script: auto  # Let Google App Engine determine how to handle the request
+
