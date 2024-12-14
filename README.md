@@ -11,7 +11,7 @@ git clone https://github.com/Syahrulalhabib/Everin-Project.git
 ```
 **Go to the app directory**
 ```
-cd everin-deploy/app
+cd everin-project/model-deploy/app
 ```
 **Deployment** 
 ```
